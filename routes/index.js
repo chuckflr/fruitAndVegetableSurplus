@@ -6,8 +6,16 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/location', function(req, res, next) {
-  res.render('location', { title: 'Express' });
+router.get('/farmlocations', function(req, res, next) {
+  res.render('farmlocations', { title: 'Express' });
+});
+
+router.get('/farmscoalinga', function(req, res, next) {
+  res.render('farmscoalinga', { title: 'Express' });
+});
+
+router.get('/farmslemoore', function(req, res, next) {
+  res.render('farmslemoore', { title: 'Express' });
 });
 
 module.exports = router;
