@@ -3,6 +3,18 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+a.navlink
+{
+  color: #70B2F4 !important;
+}
+
+body
+{
+  background-color: #D5D4B5;
+}
+
+.navbar, .nav
+{
+  background-color: #5E6D2D;
+  color: #70B2F4 !important;
 }
