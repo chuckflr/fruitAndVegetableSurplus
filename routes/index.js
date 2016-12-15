@@ -18,5 +18,12 @@ router.get('/rancho', function(req, res, next) {
   res.render('rancho', { title: 'Rancho Notso Grande' });
 });
 
+router.get('/genesis', function(req, res, next) {
+  res.render('genesis', { title: 'Genesis Organic Farm' });
+});
+
+router.get('/rustica', function(req, res, next) {
+  res.render('rustica', { title: 'Genesis Organic Farm' });
+});
 
 module.exports = router;
