@@ -19,12 +19,6 @@ body
   color: #70B2F4 !important;
 }
 
-#precontent
-{
-  background-color:#0F0;
-	height:300px;
-}
-
 #cycler
 {
   position:relative;
@@ -37,4 +31,9 @@ body
 #cycler img.active
 {
   z-index:3;
+}
+.jumbotron
+{
+  background-position: center;
+  height: 15em;
 }
