@@ -18,3 +18,22 @@ body
   background-color: #5E6D2D;
   color: #70B2F4 !important;
 }
+
+#cycler
+{
+  position:relative;
+}
+#cycler img
+{
+  position:absolute;
+  z-index:1;
+}
+#cycler img.active
+{
+  z-index:3;
+}
+.jumbotron
+{
+  background-position: center;
+  height: 15em;
+}

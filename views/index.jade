@@ -1,17 +1,28 @@
 extends layout
 
-block content  
-  nav.navbar.navbar-default.navbar-fixed-top
-    ul#list.nav.navbar-nav.pull-right.navbar-default.navlink
-      li
-        a.navLink(href='/') Home
-      li
-        a.navLink(href='/get-data') Get Data
-      li
-        a.navLink(href='/data') Data
-      li
-        a.navLink(href='/delete') Delete
-      li
-        a.navLink(href='/update') Update
-        
-          
+block content 
+ 
+  .jumbotron
+    .container
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+  #cycler
+    img.active(src='images/backstretch2.jpg', alt='My image')
+    img(src='images/backstretch3.jpg', alt='My image')
+  script.
+    function cycleImages(){
+      var $active = $('#cycler .active');
+      var $next = ($active.next().length > 0) ? $active.next() : $('#cycler img:first');
+      $next.css('z-index',2);//move the next image up the pile
+      $active.fadeOut(1500,function(){//fade out the top image
+      $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+      $next.css('z-index',3).addClass('active');//make the next image the top one
+      });
+    }
+    $(document).ready(function(){
+    // run every 7s
+    setInterval('cycleImages()', 7000);
+    })
+
+
+      
