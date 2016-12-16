@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  
+  .row
+    .col-md-6
+      .panel-group
+        .panel.panel-default
+          .panel-heading What we grow
+          .panel-body Certified Organic:
+            ul.list-group
+              li.list-group-item plums
+            ul.list-group
+              li.list-group-item Petting Zoo
+    .col-md-6  
+      iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.804998133499!2d-119.63095868509141!3d36.36550198004042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8094c31fd99fb95d%3A0x2de60f37e2178e70!2sGenesis+Organic+Farm!5e0!3m2!1sen!2sus!4v1481817375540', width="600" height="450" frameborder="0" style="border:0" allowfullscreen='')
