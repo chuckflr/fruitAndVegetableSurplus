@@ -6,6 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Fruits & Vegetables Surplus' });
 });
 
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'About' });
+});
+
 router.get('/farmlocations', function(req, res, next) {
   res.render('farmlocations', { title: 'Farm Locations' });
 });
