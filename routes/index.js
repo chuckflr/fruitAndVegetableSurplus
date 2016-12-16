@@ -11,7 +11,7 @@ router.get('/farmlocations', function(req, res, next) {
 });
 
 router.get('/farmscoalinga', function(req, res, next) {
-  res.render('farmscoalinga', { title: 'Farms Coalinga' });
+  res.render('farmscoalinga', { title: 'Farms Near Coalinga' });
 });
 
 router.get('/rancho', function(req, res, next) {

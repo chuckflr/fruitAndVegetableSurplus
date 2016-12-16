@@ -27,6 +27,7 @@ body
 {
   position:absolute;
   z-index:1;
+  left:20%;
 }
 #cycler img.active
 {
@@ -36,4 +37,9 @@ body
 {
   background-position: center;
   height: 15em;
+}
+nav p
+{
+  text-align: center;
+  font-size: 60px;
 }
